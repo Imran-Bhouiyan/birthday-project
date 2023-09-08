@@ -96,4 +96,3 @@ class ReportView(APIView):
                 return JsonResponse(result)
         except Exception as e:
             return JsonResponse({"status":status.HTTP_500_INTERNAL_SERVER_ERROR,"success":False,"message":e.args[0]})
-

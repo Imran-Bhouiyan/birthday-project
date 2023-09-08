@@ -22,3 +22,18 @@ class CustomerAdmin(admin.ModelAdmin):
      
     )
     
+@admin.register(Report)
+class ReportAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'customer',
+                
+   
+    )
+    list_filter = (
+         'id',
+        'customer',
+               
+     
+    )
+    

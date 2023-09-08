@@ -186,8 +186,11 @@ LOGGING = {
 }
 
 CRONJOBS = [
-    ('*/1 * * * *', 'birthday.cron.my_scheduled_job')
+    ('10 0 * * *', 'birthday.cron.my_scheduled_job')
 ]
+# CRONJOBS = [
+#     ('*/1 * * * *', 'birthday.cron.my_scheduled_job')
+# ]
 
 
 
